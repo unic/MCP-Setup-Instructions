@@ -2,6 +2,14 @@
 
 Diese Anleitung führt Sie durch die Einrichtung von MCP (Model Context Protocol) Servern auf Mac und Windows.
 
+## Inhaltsverzeichnis
+
+1. [MCP Inspector](#1-mcp-inspector)
+2. [MCP Server Setup mit Claude Desktop](#2-mcp-server-setup-mit-claude-desktop)
+3. [Setup mit VSCode](#3-setup-mit-vscode)
+4. [Alternative: Lokaler MCP Server mit Ollama](#4-alternative-lokaler-mcp-server-mit-ollama)
+5. [Troubleshooting](#troubleshooting)
+
 ## 1. MCP Inspector
 
 MCP Inspector ist ein Entwicklertool von Anthropic zum Testen und Debuggen von MCP-Servern. Es besteht aus einer React-basierten Web-UI (Inspector Client) und einem MCP Proxy, der den Browser mit MCP-Servern verbindet. Das Tool hilft Entwicklern, ihre MCP-Server-Implementierungen während der Integration oder Entwicklung zu validieren und Fehler zu beheben.
@@ -48,7 +56,7 @@ npx @modelcontextprotocol/inspector
 
 Weitere Informationen finden Sie im offiziellen Repository: https://github.com/modelcontextprotocol/inspector
 
-## 2. MCP Server Setup mit Claude Desktop
+## 2. MCP Server Setup mit Claude Desktop (Empfohlen)
 
 ### Schritt 1: Claude Desktop installieren
 
@@ -166,7 +174,7 @@ chmod +x mcp_install_mac.sh
 
 **Was macht das Skript:**
 - Installiert Homebrew (falls nicht vorhanden)
-- Installiert Ollama, Go und Node.js
+- Installiert Ollama und Go
 - Startet den Ollama-Service
 - Lädt das Qwen3:8b Modell herunter (unterstützt Tool-Calling)
 - Installiert MCPHost über Go
@@ -175,7 +183,9 @@ chmod +x mcp_install_mac.sh
 
 #### Windows
 
-Laden Sie das PowerShell-Skript herunter und führen Sie es als Administrator aus:
+**Voraussetzung:** Installieren Sie zuerst Ollama manuell von https://ollama.com/download/windows
+
+Laden Sie dann das PowerShell-Skript herunter und führen Sie es als Administrator aus:
 
 ```powershell
 # PowerShell als Administrator öffnen
@@ -183,6 +193,14 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-repo/MCP-Setup-In
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\mcp_install_windows.ps1
 ```
+
+**Was macht das Skript:**
+- Prüft ob Go und Ollama installiert sind
+- Installiert Go automatisch (über winget, falls verfügbar)
+- Lädt das Qwen3:8b Modell herunter (unterstützt Tool-Calling)
+- Installiert MCPHost über Go
+- Erstellt die MCP-Konfigurationsdatei
+- Konfiguriert die PATH-Variable
 
 ### Manuelle Installation
 
