@@ -1,6 +1,6 @@
 # MCP Server Einrichtung - Anleitung
 
-Diese Anleitung führt Sie durch die Einrichtung von MCP (Model Context Protocol) Servern auf Mac und Windows.
+Diese Anleitung führt dich durch die Einrichtung von MCP (Model Context Protocol) Servern auf Mac und Windows.
 
 ## Inhaltsverzeichnis
 
@@ -16,14 +16,14 @@ MCP Inspector ist ein Entwicklertool von Anthropic zum Testen und Debuggen von M
 
 ### NodeJS Installation
 
-Bevor Sie MCP Inspector nutzen können, müssen Sie Node.js installieren:
+Bevor du MCP Inspector nutzen kannst, musst du Node.js installieren:
 
 #### Mac
-1. Besuchen Sie https://nodejs.org/
-2. Laden Sie die LTS-Version für macOS herunter
-3. Öffnen Sie die heruntergeladene .pkg-Datei
-4. Folgen Sie den Installationsanweisungen
-5. Überprüfen Sie die Installation im Terminal:
+1. Besuche https://nodejs.org/
+2. Lade die LTS-Version für macOS herunter
+3. Öffne die heruntergeladene .pkg-Datei
+4. Folge den Installationsanweisungen
+5. Überprüfe die Installation im Terminal:
    ```bash
    node --version
    npm --version
@@ -35,11 +35,11 @@ brew install node
 ```
 
 #### Windows
-1. Besuchen Sie https://nodejs.org/
-2. Laden Sie die LTS-Version für Windows herunter
-3. Führen Sie die .msi-Datei aus
-4. Folgen Sie dem Installationsassistenten
-5. Überprüfen Sie die Installation in der Eingabeaufforderung:
+1. Besuche https://nodejs.org/
+2. Lade die LTS-Version für Windows herunter
+3. Führe die .msi-Datei aus
+4. Folge dem Installationsassistenten
+5. Überprüfe die Installation in der Eingabeaufforderung:
    ```cmd
    node --version
    npm --version
@@ -47,38 +47,38 @@ brew install node
 
 ### MCP Inspector starten
 
-Nach der Node.js Installation können Sie MCP Inspector einfach ausführen:
+Nach der Node.js Installation kannst du MCP Inspector einfach ausführen:
 
 #### Mac & Windows
 ```bash
 npx @modelcontextprotocol/inspector
 ```
 
-Weitere Informationen finden Sie im offiziellen Repository: https://github.com/modelcontextprotocol/inspector
+Weitere Informationen findest du im offiziellen Repository: https://github.com/modelcontextprotocol/inspector
 
 ## 2. MCP Server Setup mit Claude Desktop (Empfohlen)
 
 ### Schritt 1: Claude Desktop installieren
 
-Besuchen Sie https://claude.ai/download und laden Sie Claude Desktop für Ihr Betriebssystem herunter:
+Besuche https://claude.ai/download und lade Claude Desktop für dein Betriebssystem herunter:
 
 #### Mac
-- Laden Sie die .dmg-Datei herunter
-- Öffnen Sie die .dmg-Datei
-- Ziehen Sie Claude in den Programme-Ordner
+- Lade die .dmg-Datei herunter
+- Öffne die .dmg-Datei
+- Ziehe Claude in den Programme-Ordner
 
 #### Windows
-- Laden Sie die .exe-Datei herunter
-- Führen Sie die Installation aus
-- Folgen Sie den Installationsanweisungen
+- Lade die .exe-Datei herunter
+- Führe die Installation aus
+- Folge den Installationsanweisungen
 
 ### Schritt 2: Einloggen/Registrieren
 
-Starten Sie Claude Desktop und loggen Sie sich mit Ihrem Anthropic-Konto ein oder registrieren Sie sich.
+Starte Claude Desktop und logge dich mit deinem Anthropic-Konto ein oder registriere dich.
 
 ### Schritt 3: Settings öffnen
 
-Öffnen Sie die Einstellungen in Claude Desktop.
+Öffne die Einstellungen in Claude Desktop.
 
 <p align="left">
     <img src="images/claude_settings.png" alt="Claude Desktop Einstellungen öffnen" width="25%" />
@@ -86,7 +86,7 @@ Starten Sie Claude Desktop und loggen Sie sich mit Ihrem Anthropic-Konto ein ode
 
 ### Schritt 4: "Edit Config" in Developer Settings
 
-Klicken Sie in den Developer Settings auf "Edit Config".
+Klicke in den Developer Settings auf "Edit Config".
 
 <p align="left">
     <img src="images/claude_edit_config.png" alt="Auf 'Edit Config' in den Developer Settings klicken." width="50%" />
@@ -94,7 +94,7 @@ Klicken Sie in den Developer Settings auf "Edit Config".
 
 ### Schritt 5: JSON-Konfiguration bearbeiten
 
-Bearbeiten Sie die JSON-Konfiguration so, dass sie folgendermassen aussieht:
+Bearbeite die JSON-Konfiguration so, dass sie folgendermassen aussieht:
 
 ```json
 {
@@ -110,7 +110,7 @@ Bearbeiten Sie die JSON-Konfiguration so, dass sie folgendermassen aussieht:
 }
 ```
 
-Oder fügen Sie diesen Teil in eine bestehende Konfiguration ein:
+Oder füge diesen Teil in eine bestehende Konfiguration ein:
 
 ```json
 "swiss-ai-weeks-mcp": {
@@ -124,7 +124,7 @@ Oder fügen Sie diesen Teil in eine bestehende Konfiguration ein:
 
 ### Schritt 6: Speichern und Claude neustarten
 
-Speichern Sie die Konfiguration und starten Sie Claude Desktop neu, damit die Änderungen wirksam werden.
+Speichere die Konfiguration und starte Claude Desktop neu, damit die Änderungen wirksam werden.
 
 ## 3. Setup mit VSCode
 
@@ -132,12 +132,12 @@ Für Entwickler, die bereits VSCode nutzen, gibt es auch eine VSCode-Integration
 
 ### Installation und Konfiguration
 
-1. Öffnen Sie die Command Palette mit `CMD + Shift + P`
-2. Wählen Sie "MCP: Add Server" aus
-3. Wählen Sie "HTTP" als Art von Server aus
-4. Geben Sie die URL ein (aus dem GitHub Gist kopieren)
-5. Geben Sie einen Namen ein, z.B. `unic-swiss-ai-weeks-mcp`
-6. Wählen Sie aus, ob der Server überall oder nur im Workspace verfügbar sein soll
+1. Öffne die Command Palette mit `CMD + Shift + P`
+2. Wähle "MCP: Add Server" aus
+3. Wähle "HTTP" als Art von Server aus
+4. Gib die URL ein (aus dem GitHub Gist kopieren)
+5. Gib einen Namen ein, z.B. `unic-swiss-ai-weeks-mcp`
+6. Wähle aus, ob der Server überall oder nur im Workspace verfügbar sein soll
 
 Am Ende sollte der Server in der Konfiguration so aussehen:
 
@@ -152,11 +152,11 @@ Am Ende sollte der Server in der Konfiguration so aussehen:
 
 ## 4. Alternative: Lokaler MCP Server mit Ollama
 
-Als Alternative zu den Remote-Servern können Sie auch einen lokalen MCP Server mit Ollama einrichten. Dies bietet mehr Kontrolle und Privatsphäre, da alle Daten lokal verarbeitet werden.
+Als Alternative zu den Remote-Servern kannst du auch einen lokalen MCP Server mit Ollama einrichten. Dies bietet mehr Kontrolle und Privatsphäre, da alle Daten lokal verarbeitet werden.
 
 ### Was ist Ollama?
 
-Ollama ist ein Tool, das es ermöglicht, große Sprachmodelle (LLMs) lokal auf Ihrem Computer auszuführen. In Kombination mit MCPHost können Sie MCP-Server mit lokalen LLMs verwenden.
+Ollama ist ein Tool, das es ermöglicht, große Sprachmodelle (LLMs) lokal auf deinem Computer auszuführen. In Kombination mit MCPHost kannst du MCP-Server mit lokalen LLMs verwenden.
 
 ### Automatische Installation
 
@@ -164,7 +164,7 @@ Wir haben Installationsskripte erstellt, die den gesamten Prozess automatisieren
 
 #### Mac
 
-Laden Sie das Skript herunter und führen Sie es aus:
+Lade das Skript herunter und führe es aus:
 
 ```bash
 curl -O https://raw.githubusercontent.com/your-repo/MCP-Setup-Instructions/main/mcp_install_mac.sh
@@ -183,9 +183,9 @@ chmod +x mcp_install_mac.sh
 
 #### Windows
 
-**Voraussetzung:** Installieren Sie zuerst Ollama manuell von https://ollama.com/download/windows
+**Voraussetzung:** Installiere zuerst Ollama manuell von https://ollama.com/download/windows
 
-Laden Sie dann das PowerShell-Skript herunter und führen Sie es als Administrator aus:
+Lade dann das PowerShell-Skript herunter und führe es als Administrator aus:
 
 ```powershell
 # PowerShell als Administrator öffnen
@@ -213,7 +213,7 @@ brew services start ollama
 ```
 
 **Windows:**
-Laden Sie Ollama von https://ollama.com/download/windows herunter und installieren Sie es.
+Lade Ollama von https://ollama.com/download/windows herunter und installiere es.
 
 #### Schritt 2: LLM-Modell mit Tool-Calling herunterladen
 
@@ -231,7 +231,7 @@ brew install go
 ```
 
 **Windows:**
-Verwenden Sie winget oder laden Sie Go von https://go.dev/doc/install herunter.
+Verwende winget oder lade Go von https://go.dev/doc/install herunter.
 
 #### Schritt 4: MCPHost installieren
 
@@ -241,7 +241,7 @@ go install github.com/mark3labs/mcphost@latest
 
 #### Schritt 5: Konfigurationsdatei erstellen
 
-Erstellen Sie eine `mcp_config.json` Datei:
+Erstelle eine `mcp_config.json` Datei:
 
 ```json
 {
@@ -265,7 +265,7 @@ mcphost -m ollama:qwen2.5 --config "pfad/zur/mcp_config.json"
 
 ### Vorteile der lokalen Installation
 
-- **Privatsphäre**: Alle Daten bleiben auf Ihrem Computer
+- **Privatsphäre**: Alle Daten bleiben auf deinem Computer
 - **Offline-Nutzung**: Funktioniert ohne Internetverbindung
 - **Anpassbar**: Verschiedene Modelle und Konfigurationen möglich
 - **Kostenfrei**: Keine API-Kosten für die Nutzung
