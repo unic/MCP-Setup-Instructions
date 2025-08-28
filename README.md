@@ -57,9 +57,14 @@ brew install node
 Nach der Node.js Installation kannst du MCP Inspector einfach ausführen:
 
 #### Mac & Windows
-```bash
-npx @modelcontextprotocol/inspector
-```
+
+1. Terminal oder PowerShell öffnen
+2. Folgenden Command ausführen:
+   ```bash
+   npx @modelcontextprotocol/inspector
+   ```
+3. Installation der Packages bestätgien
+4. Inspector wird geöffnet
 
 Weitere Informationen findest du im offiziellen Repository: https://github.com/modelcontextprotocol/inspector
 
