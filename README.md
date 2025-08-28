@@ -39,7 +39,7 @@ brew install node
 2. Lade die LTS-Version für Windows herunter
 3. Führe die .msi-Datei aus
 4. Folge dem Installationsassistenten
-5. Überprüfe die Installation in der Eingabeaufforderung:
+5. Überprüfe die Installation in der Eingabeaufforderung/Powershell:
    ```cmd
    node --version
    npm --version
@@ -103,7 +103,7 @@ Bearbeite die JSON-Konfiguration so, dass sie folgendermassen aussieht:
       "command": "npx",
       "args": [
           "mcp-remote",
-          "https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/"
+          "http://localhost:8000/mcp/"
       ]
     }
   }
@@ -135,7 +135,7 @@ Für Entwickler, die bereits VSCode nutzen, gibt es auch eine VSCode-Integration
 1. Öffne die Command Palette mit `CMD + Shift + P`
 2. Wähle "MCP: Add Server" aus
 3. Wähle "HTTP" als Art von Server aus
-4. Gib die URL ein (aus dem GitHub Gist kopieren)
+4. Gib die URL ein (aus der JSON Konfiguration hier kopieren)
 5. Gib einen Namen ein, z.B. `unic-swiss-ai-weeks-mcp`
 6. Wähle aus, ob der Server überall oder nur im Workspace verfügbar sein soll
 
@@ -167,7 +167,7 @@ Wir haben Installationsskripte erstellt, die den gesamten Prozess automatisieren
 Lade das Skript herunter und führe es aus:
 
 ```bash
-curl -O https://raw.githubusercontent.com/your-repo/MCP-Setup-Instructions/main/mcp_install_mac.sh
+curl -O https://raw.githubusercontent.com/unic/MCP-Setup-Instructions/main/mcp_install_mac.sh
 chmod +x mcp_install_mac.sh
 ./mcp_install_mac.sh
 ```
@@ -189,7 +189,7 @@ Lade dann das PowerShell-Skript herunter und führe es als Administrator aus:
 
 ```powershell
 # PowerShell als Administrator öffnen
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-repo/MCP-Setup-Instructions/main/mcp_install_windows.ps1" -OutFile "mcp_install_windows.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/unic/MCP-Setup-Instructions/main/mcp_install_windows.ps1" -OutFile "mcp_install_windows.ps1"
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\mcp_install_windows.ps1
 ```
