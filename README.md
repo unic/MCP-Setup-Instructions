@@ -19,14 +19,20 @@ MCP Inspector ist ein Entwicklertool von Anthropic zum Testen und Debuggen von M
 Bevor du MCP Inspector nutzen kannst, musst du Node.js installieren:
 
 #### Mac
-1. Besuche https://nodejs.org/
-2. Lade die LTS-Version für macOS herunter
+1. Besuche https://nodejs.org/download
+2. Lade die LTS-Version für macOS herunter, auf "macOS Installer (.pkg)" klicken
 3. Öffne die heruntergeladene .pkg-Datei
 4. Folge den Installationsanweisungen
-5. Überprüfe die Installation im Terminal:
+5. Terminal öffnen (in macOS Suche den Begriff Terminal eingeben)
+6. Überprüfe die Installation im Terminal:
    ```bash
    node --version
    npm --version
+   ```
+7. Bei erfolgreicher Installation wird das Terminal die Versionen ausgeben:
+   ```bash
+   v22.18.0
+   10.9.3
    ```
 
 Alternativ mit Homebrew:
@@ -35,11 +41,12 @@ brew install node
 ```
 
 #### Windows
-1. Besuche https://nodejs.org/
+1. Besuche https://nodejs.org/download
 2. Lade die LTS-Version für Windows herunter
 3. Führe die .msi-Datei aus
 4. Folge dem Installationsassistenten
-5. Überprüfe die Installation in der Eingabeaufforderung/Powershell:
+5. In Startmenü nach Powershell suchen
+6. Überprüfe die Installation in der Eingabeaufforderung/Powershell:
    ```cmd
    node --version
    npm --version
