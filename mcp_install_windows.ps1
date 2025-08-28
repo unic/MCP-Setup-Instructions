@@ -106,8 +106,7 @@ function Final-Instructions {
     Write-Host "Setup complete!"
     Write-Host "To run mcphost, use the following command:"
     Write-Host "  mcphost -m ollama:qwen3:8b --config $env:APPDATA\mcphost\mcp_config.json"
-    Write-Host "If 'mcphost' isn't recognized, restart your terminal or run:"
-    Write-Host "  $env:Path += ';$GOBIN'"
+    Write-Host "If 'mcphost' isn't recognized, restart your terminal."
 }
 
 # -----------------------------

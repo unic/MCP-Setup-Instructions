@@ -190,9 +190,14 @@ Lade dann das PowerShell-Skript herunter und führe es als Administrator aus:
 ```powershell
 # PowerShell als Administrator öffnen
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/unic/MCP-Setup-Instructions/main/mcp_install_windows.ps1" -OutFile "mcp_install_windows.ps1"
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\mcp_install_windows.ps1
 ```
+
+> **Hinweis:** Falls beim Ausführen des Skripts eine Fehlermeldung bezüglich Berechtigungen erscheint, setze die Ausführungsrichtlinie mit folgendem Befehl (nur einmal notwendig):
+>
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
 
 **Was macht das Skript:**
 - Prüft ob Go und Ollama installiert sind
