@@ -23,7 +23,7 @@ Bevor du MCP Inspector nutzen kannst, musst du Node.js installieren:
 2. Lade die LTS-Version für macOS herunter, auf "macOS Installer (.pkg)" klicken
 3. Öffne die heruntergeladene .pkg-Datei
 4. Folge den Installationsanweisungen
-5. Terminal öffnen (in macOS Suche den Begriff Terminal eingeben)
+5. Terminal öffnen (in der macOS Suche den Begriff Terminal eingeben)
 6. Überprüfe die Installation im Terminal:
    ```bash
    node --version
@@ -36,9 +36,11 @@ Bevor du MCP Inspector nutzen kannst, musst du Node.js installieren:
    ```
 
 Alternativ mit Homebrew:
-```bash
-brew install node
-```
+1. Terminal öffnen
+2. Folgenden Command ausführen:
+   ```bash
+   brew install node
+   ```
 
 #### Windows
 1. Besuche https://nodejs.org/download
@@ -63,8 +65,13 @@ Nach der Node.js Installation kannst du MCP Inspector einfach ausführen:
    ```bash
    npx @modelcontextprotocol/inspector
    ```
-3. Installation der Packages bestätgien
-4. Inspector wird geöffnet
+3. Installation der Packages bestätigen
+
+4. <span style="color: red;">Inspector wird in Browser Tab geöffnet, Streamable HTTP selektieren und MCP URL eingeben</span>
+    <p align="left">
+        <img src="images/mcp_inspector_connection.png" alt="MCP Inspector Connection machen" width="25%" style="border: 3px solid red;" />
+    </p>
+5. Connect drücken
 
 Weitere Informationen findest du im offiziellen Repository: https://github.com/modelcontextprotocol/inspector
 
@@ -108,6 +115,8 @@ Klicke in den Developer Settings auf "Edit Config".
 
 Bearbeite die JSON-Konfiguration so, dass sie folgendermassen aussieht:
 
+<div style="border: 2px solid red; padding: 10px;">
+
 ```json
 {
   "mcpServers": {
@@ -121,8 +130,11 @@ Bearbeite die JSON-Konfiguration so, dass sie folgendermassen aussieht:
   }
 }
 ```
+</div>
 
 Oder füge diesen Teil in eine bestehende Konfiguration ein:
+
+<div style="border: 2px solid red; padding: 10px;">
 
 ```json
 "swiss-ai-weeks-mcp": {
@@ -133,6 +145,8 @@ Oder füge diesen Teil in eine bestehende Konfiguration ein:
     ]
 }
 ```
+
+</div>
 
 ### Schritt 6: Speichern und Claude neustarten
 
@@ -150,8 +164,12 @@ Für Entwickler, die bereits VSCode nutzen, gibt es auch eine VSCode-Integration
 4. Gib die URL ein (aus der JSON Konfiguration hier kopieren)
 5. Gib einen Namen ein, z.B. `unic-swiss-ai-weeks-mcp`
 6. Wähle aus, ob der Server überall oder nur im Workspace verfügbar sein soll
+7. Mit Github Copilot Agent den MCP Server nutzen
 
-Am Ende sollte der Server in der Konfiguration so aussehen:
+Am Ende sollte der Server in der Konfiguration in `mcp.json` so aussehen:
+
+
+<div style="border: 2px solid red; padding: 10px;">
 
 ```json
 "unic-swiss-ai-weeks-mcp": {
@@ -160,11 +178,11 @@ Am Ende sollte der Server in der Konfiguration so aussehen:
 }
 ```
 
----
+</div>
 
 ## 4. Alternative: Lokaler MCP Server mit Ollama
 
-Als Alternative zu den Remote-Servern kannst du auch einen lokalen MCP Server mit Ollama einrichten. Dies bietet mehr Kontrolle und Privatsphäre, da alle Daten lokal verarbeitet werden.
+Als Alternative kannst du auch einen MCP-Server mit einem lokalen LLM verbinden. Das ermöglicht dir mehr Kontrolle und erhöht den Schutz deiner Daten.
 
 ### Was ist Ollama?
 
