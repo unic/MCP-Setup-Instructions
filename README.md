@@ -67,10 +67,11 @@ Nach der Node.js Installation kannst du MCP Inspector einfach ausführen:
    ```
 3. Installation der Packages bestätigen
 
-4. <span style="color: red;">Inspector wird in Browser Tab geöffnet, Streamable HTTP selektieren und MCP URL eingeben</span>
+4. Inspector wird in Browser Tab geöffnet, Streamable HTTP selektieren und MCP URL eingeben
     <p align="left">
-        <img src="images/mcp_inspector_connection.png" alt="MCP Inspector Connection machen" width="25%" style="border: 3px solid red;" />
+        <img src="images/mcp_inspector_connection.png" alt="MCP Inspector Connection machen" width="75%" />
     </p>
+    
 5. Connect drücken
 
 Weitere Informationen findest du im offiziellen Repository: https://github.com/modelcontextprotocol/inspector
@@ -115,7 +116,6 @@ Klicke in den Developer Settings auf "Edit Config".
 
 Bearbeite die JSON-Konfiguration so, dass sie folgendermassen aussieht:
 
-<div style="border: 2px solid red; padding: 10px;">
 
 ```json
 {
@@ -124,29 +124,28 @@ Bearbeite die JSON-Konfiguration so, dass sie folgendermassen aussieht:
       "command": "npx",
       "args": [
           "mcp-remote",
-          "http://localhost:8000/mcp/"
+          "https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/"
       ]
     }
   }
 }
 ```
-</div>
+
 
 Oder füge diesen Teil in eine bestehende Konfiguration ein:
 
-<div style="border: 2px solid red; padding: 10px;">
 
 ```json
 "swiss-ai-weeks-mcp": {
     "command": "npx",
     "args": [
         "mcp-remote",
-        "http://localhost:8000/mcp/"
+        "https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/"
     ]
 }
 ```
 
-</div>
+
 
 ### Schritt 6: Speichern und Claude neustarten
 
@@ -169,16 +168,14 @@ Für Entwickler, die bereits VSCode nutzen, gibt es auch eine VSCode-Integration
 Am Ende sollte der Server in der Konfiguration in `mcp.json` so aussehen:
 
 
-<div style="border: 2px solid red; padding: 10px;">
 
 ```json
 "unic-swiss-ai-weeks-mcp": {
-    "url": "http://localhost:8000/mcp/",
+    "url": "https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/",
     "type": "http"
 }
 ```
 
-</div>
 
 ## 4. Alternative: Lokaler MCP Server mit Ollama
 
@@ -285,7 +282,7 @@ Erstelle eine `mcp_config.json` Datei:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://localhost:8000/mcp/"
+        "https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/"
       ]
     }
   }
