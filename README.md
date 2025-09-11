@@ -19,7 +19,7 @@ MCP Inspector ist ein Entwicklertool von Anthropic zum Testen und Debuggen von M
 Bevor du MCP Inspector nutzen kannst, musst du Node.js installieren:
 
 #### Mac
-1. Besuche https://nodejs.org/download
+1. Besuche https://nodejs.org/download/release/latest/
 2. Lade die LTS-Version für macOS herunter, auf "macOS Installer (.pkg)" klicken
 3. Öffne die heruntergeladene .pkg-Datei
 4. Folge den Installationsanweisungen
@@ -43,8 +43,8 @@ Alternativ mit Homebrew:
    ```
 
 #### Windows
-1. Besuche https://nodejs.org/download
-2. Lade die LTS-Version für Windows herunter
+1. Besuche https://nodejs.org/download/release/latest/
+2. Lade die LTS-Version .msi-Datei für Windows herunter
 3. Führe die .msi-Datei aus
 4. Folge dem Installationsassistenten
 5. In Startmenü nach Powershell suchen
@@ -67,11 +67,11 @@ Nach der Node.js Installation kannst du MCP Inspector einfach ausführen:
    ```
 3. Installation der Packages bestätigen
 
-4. Inspector wird in Browser Tab geöffnet, Streamable HTTP selektieren und MCP URL eingeben
+4. Inspector wird in Browser Tab geöffnet, Streamable HTTP selektieren und URL https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/ eingeben
     <p align="left">
         <img src="images/mcp_inspector_connection.png" alt="MCP Inspector Connection machen" width="75%" />
     </p>
-    
+
 5. Connect drücken
 
 Weitere Informationen findest du im offiziellen Repository: https://github.com/modelcontextprotocol/inspector
