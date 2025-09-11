@@ -64,7 +64,7 @@ function Create-MCPConfig {
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://localhost:8000/mcp/"
+        "https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/"
       ]
     }
   }
