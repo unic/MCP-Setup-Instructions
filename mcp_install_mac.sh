@@ -130,7 +130,7 @@ cat > "$CONFIG_PATH" <<'JSON'
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://localhost:8000/mcp/"
+        "https://unic-swiss-ai-weeks-mcp.azurewebsites.net/mcp/"
       ]
     }
   }
